@@ -104,7 +104,7 @@ def graph_search(problem, fringe):
         node = fringe.pop()
         exp_nodes = exp_nodes + 1
         if problem.goal_test(node.state):
-            print("Nr of expanded nodes: ", exp_nodes)
+            print("Nr of visited nodes: ", exp_nodes)
             return node
         if node.state not in closed:
             closed[node.state] = True
